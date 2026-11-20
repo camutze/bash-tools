@@ -1,0 +1,5 @@
+O que faz
+Percorre a pasta fotos(criar caso necessario)  do diretório atual (incluindo todas as subpastas), converte qualquer imagem suportada pelo ImageMagick (HEIC, PNG, WEBP, JPG, etc.) para .jpg e reduz a resolução para 70%. Ele replica a mesma estrutura de pastas dentro de Fotos_convertidas/, ignora arquivos que não sejam imagens e já ajusta as permissões no final (755 nas pastas e 644 nos arquivos).
+
+Como usar
+Instale o ImageMagick com suporte a HEIC (sudo apt install -y imagemagick libheif1), coloque o converter.sh na mesma pasta onde está o diretório fotos/, dê permissão de execução (chmod +x converter.sh) e rode com ./converter.sh (sem sudo).
